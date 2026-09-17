@@ -1,0 +1,28 @@
+name: PHP checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+      - name: Syntax check
+        run: find . -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -n1 php -l
+      - name: Functional tests
+        run: php tests/run.php
+      - name: Project check
+        run: php bin/check.php
+      - name: HTTP smoke test
+        run: |
+          php -S 127.0.0.1:8080 -t public public/router.php > /tmp/portal.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID' EXIT
+          sleep 1
+          curl --fail --silent http://127.0.0.1:8080/health
+          curl --fail --silent --output /dev/null http://127.0.0.1:8080/

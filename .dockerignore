@@ -1,0 +1,8 @@
+.git
+.github
+.idea
+.vscode
+storage/*.log
+storage/*.pid
+vendor
+*.zip
