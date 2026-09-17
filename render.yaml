@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: anna-kolesova-portal-demo
+    name: php-bitrix-project-sandbox
     runtime: docker
     plan: free
     region: frankfurt

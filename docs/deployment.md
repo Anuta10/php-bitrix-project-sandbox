@@ -6,7 +6,7 @@
 
 Рекомендуемое имя:
 
-`corporate-portal-sandbox`
+`php-bitrix-project-sandbox`
 
 В GitHub при создании репозитория не добавляйте README, `.gitignore` и лицензию — они уже есть в проекте.
 
@@ -18,8 +18,8 @@
 git init
 git branch -M main
 git add .
-git commit -m "Публикация корпоративной песочницы"
-git remote add origin https://github.com/Anuta10/corporate-portal-sandbox.git
+git commit -m "Initial project portfolio version"
+git remote add origin https://github.com/Anuta10/php-bitrix-project-sandbox.git
 git push -u origin main
 ```
 
@@ -35,7 +35,7 @@ Render настроен на `autoDeployTrigger: checksPass`, поэтому п�
 
 1. Войти на Render.
 2. Выбрать **New → Blueprint**.
-3. Подключить GitHub и выбрать репозиторий `corporate-portal-sandbox`.
+3. Подключить GitHub и выбрать репозиторий `php-bitrix-project-sandbox`.
 4. Render найдёт `render.yaml` в корне.
 5. Подтвердить создание сервиса.
 
@@ -54,7 +54,7 @@ Render выдаст публичный адрес вида:
 После этого стоит добавить фактическую ссылку Live Demo:
 
 - в верхнюю часть `README.md`;
-- в русское и английское резюме;
+- в проектные профили и отклики;
 - в профиль GitHub (Website);
 - при желании в описание репозитория.
 

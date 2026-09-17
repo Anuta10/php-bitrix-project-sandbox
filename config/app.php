@@ -22,10 +22,7 @@ return [
         'github' => 'https://github.com/Anuta10',
     ],
     'compensation' => [
-        'full_time_ru' => '200 000–230 000 ₽ net / месяц',
-        'full_time_en' => 'RUB 200,000–230,000 net / month',
-        'hourly_ru' => '2 000–2 500 ₽ / час',
-        'hourly_en' => 'RUB 2,000–2,500 / hour',
+        // Project pricing is estimated per task after scope review.
         'show_on_public_about_page' => false,
     ],
 ];

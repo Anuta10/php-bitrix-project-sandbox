@@ -20,26 +20,23 @@ All employees, departments, contacts, events, and content shown in the demo are 
 
 ## Live Demo
 
-### Russia / CIS — primary deployment
+🚀 **Dedicated project demo:** this repository is intended to have its own public deployment, separate from other portfolio versions.
 
-🌐 **[Open Corporate Portal Sandbox](https://anuta10-corporate-portal-sandbox-d36e.twc1.net/)**
-
-Primary deployment for Russia / CIS, hosted on Timeweb Cloud.  
-Основной стенд для России и СНГ.
-
-### Global mirror
-
-🌍 **[Open Global Mirror](https://anna-kolesova-portal-demo.onrender.com/)**
-
-International mirror hosted on Render.  
-Международное резервное зеркало.
+The public URL will be added here after the new service is connected to this repository.
 
 ### Source code
 
-💻 **[GitHub Repository](https://github.com/Anuta10/corporate-portal-sandbox)**
+💻 **[GitHub Repository](https://github.com/Anuta10/php-bitrix-project-sandbox)**
 
-Both deployments are built from the same `main` branch.  
-Оба стенда собираются из одной ветки `main`.
+### Local preview
+
+Requires PHP 8.3+. From the project root:
+
+```powershell
+php -S 127.0.0.1:8080 -t public public/router.php
+```
+
+Then open `http://127.0.0.1:8080`.
 
 ---
 
@@ -209,7 +206,7 @@ php bin/check.php
 
 - **[Структура проекта](docs/project-structure.md)** — какой файл за что отвечает;
 - **[Кейсы](docs/cases.md)** — краткое описание реализованных сценариев;
-- **[Сценарий демонстрации](docs/demo-scenario.md)** — что показать на собеседовании;
+- **[Сценарий демонстрации](docs/demo-scenario.md)** — что показать заказчику при обсуждении проекта;
 - **[Локальный запуск](docs/local-setup.md)** — подробная инструкция;
 - **[Deployment](docs/deployment.md)** — развёртывание проекта;
 - **[Timeweb Cloud App Platform](docs/timeweb-app-platform.md)** — конфигурация основного публичного стенда.
@@ -218,12 +215,14 @@ php bin/check.php
 
 ## Deployment
 
-Проект развёрнут в двух независимых окружениях:
+Для этой проектной версии предусмотрен **отдельный deployment**, подключённый именно к репозиторию `Anuta10/php-bitrix-project-sandbox`.
 
-- **Timeweb Cloud App Platform** — основной стенд для России и СНГ;
-- **Render** — международное зеркало.
+Поддерживаются два варианта:
 
-Оба окружения используют один GitHub-репозиторий и ветку `main`.
+- **Timeweb Cloud App Platform** — основной публичный стенд;
+- **Render** — отдельный резервный / международный стенд.
+
+После создания нового сервиса его фактический URL нужно добавить в раздел **Live Demo** выше.
 
 Основной workflow:
 
@@ -237,4 +236,4 @@ php bin/check.php
 
 Я занимаюсь разработкой корпоративных web-приложений на PHP и 1С-Битрикс: кастомные модули, внутренние сервисы, автоматизация бизнес-процессов и пользовательские интерфейсы.
 
-Этот репозиторий создан как интерактивное дополнение к моему резюме и позволяет посмотреть часть реализованных мной подходов не только в описании, но и в работающем демо.
+Этот репозиторий создан как proof-of-work для заказчиков и проектной работы: он показывает подход к доработке PHP / 1С-Битрикс систем на работающем демо и в исходном коде.

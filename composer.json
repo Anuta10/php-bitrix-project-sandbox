@@ -1,6 +1,6 @@
 {
-  "name": "anna-kolesova/corporate-portal-sandbox",
-  "description": "Demo corporate portal with anonymized work scenarios for a PHP / 1C-Bitrix portfolio.",
+  "name": "anna-kolesova/php-bitrix-project-sandbox",
+  "description": "Project-work PHP / 1C-Bitrix sandbox with anonymized corporate scenarios and proof-of-work cases.",
   "type": "project",
   "license": "MIT",
   "require": {
